@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 0;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
+    public TextMeshProUGUI Lives;
     private Rigidbody rb;
     private int count;
     private float movementX;
