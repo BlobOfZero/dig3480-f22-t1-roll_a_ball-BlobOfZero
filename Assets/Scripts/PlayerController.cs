@@ -56,6 +56,11 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
-        
+        if(other.gameObject(Collider Other));
+        {
+            other.gameObject.SetActive(false);
+            count = count - 1;
+            SetCountText();
+        }
     }
 }
