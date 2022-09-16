@@ -48,21 +48,35 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(movement * speed);
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("PickUp"));
+        // When collecting pickup item, count value goes up
+        if (other.gameObject.CompareTag("Pickup"))
         {
             other.gameObject.SetActive(false);
             count = count + 1;
 
             SetCountText();
         }
-       
-        if(other.gameObject.CompareTag("Enemy"));
+
+        // when colliding with enemy, lives counted down
+        if (other.gameObject.CompareTag("Enemy"))
         {
             other.gameObject.SetActive(false);
-            count = count -1;
+            lives = lives - 1;
+
             SetCountText();
+        }
+
+        // Teleportation to new levels
+        if (count == 12)
+        {
+            transform.position = new Vector3(50f, 0.5f, 50f);
+        }
+
+        if (count == 20)
+        {
+            transform.position = new Vector3(100f, 0.5f, 100f);
         }
     }
 }
