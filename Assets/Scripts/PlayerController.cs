@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
-        
+
         SetCountText();
         winTextObject.SetActive(false);
 
@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             other.gameObject.SetActive(false);
-            count = count - 1;
+            lives = lives - 1;
 
             SetCountText();
         }
