@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 0;
     public TextMeshProUGUI countText;
-    public TextMeshProUGUI Lives;
+    public TextMeshProUGUI lives;
     public GameObject winTextObject;
     public GameObject loseTextObject;
     private Rigidbody rb;
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         winTextObject.SetActive(false);
 
         rb = GetComponent<Rigidbody>();
-        Lives = 3;
+        lives = 3;
 
         SetCountText();
         loseTextObject.SetActive(false);
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
             winTextObject.SetActive(true);
         }
 
-        Lives.text = "Lives:" + Lives.ToString();
+        lives.text = "Lives:" + lives.ToString();
         if (lives == 0)
         {
             loseTextObject.SetActive(true);
