@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
             winTextObject.SetActive(true);
         }
 
-        
+        Lives.text = "Lives:" + Lives.ToString();
     }
 
     void FixedUpdate()
