@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
         count = 0;
         SetCountText();
         winTextObject.SetActive(false);
+
+        rb
     }
 
     void OnMove(InputValue movementValue)
