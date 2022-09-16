@@ -66,5 +66,7 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
+        if (count == 12)
+        
     }
 }
