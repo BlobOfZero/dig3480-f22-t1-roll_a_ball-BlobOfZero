@@ -40,6 +40,8 @@ public class PlayerController : MonoBehaviour
         {
             winTextObject.SetActive(true);
         }
+
+        
     }
 
     void FixedUpdate()
