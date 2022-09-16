@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public GameObject loseTextObject;
     private Rigidbody rb;
     private int count;
+    private int lives;
     private float movementX;
     private float movementY;
 
@@ -48,7 +49,7 @@ public class PlayerController : MonoBehaviour
         }
 
         Lives.text = "Lives:" + Lives.ToString();
-        if (Lives = 0)
+        if (lives == 0)
         {
             loseTextObject.SetActive(true);
         }
