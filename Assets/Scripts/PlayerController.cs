@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
         Lives = 3;
+
+        SetCountText();
+        loseTextObject.SetActive(false);
     }
 
     void OnMove(InputValue movementValue)
