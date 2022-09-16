@@ -42,6 +42,10 @@ public class PlayerController : MonoBehaviour
         }
 
         Lives.text = "Lives:" + Lives.ToString();
+        if (Lives == 0)
+        {
+            
+        }
     }
 
     void FixedUpdate()
