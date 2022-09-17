@@ -1313,7 +1313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   countText: {fileID: 1169192035}
-  Lives: {fileID: 1534410391}
+  livesText: {fileID: 1534410391}
   winTextObject: {fileID: 1086247955}
   loseTextObject: {fileID: 1165047593}
 --- !u!114 &743217086
@@ -2873,7 +2873,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c1d7f1a6286c702488e0a11df2bdccce, type: 2}
+  - {fileID: 2100000, guid: 57931c3d316c0444f8b76b7859737657, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
