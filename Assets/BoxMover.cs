@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BoxMover : MonoBehaviour
 // Transforms to act as start and end markers for the journey.
+{
 public Transform startMarker;
 public Transform endMarker;
 
