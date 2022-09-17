@@ -37,4 +37,5 @@ void Update()
 
     // Set our position as a fraction of the distance between the markers and pingpong the movement.
     transform.position = Vector3.Lerp(startMarker.position, endMarker.position, Mathf.PingPong(fracJourney, 1));
+    }
 }
